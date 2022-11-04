@@ -1,0 +1,27 @@
+<!-- On charge les fichiers du dossier static pour pouvoir les utiliser ici -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'contact/css/style.css' %}">
+    <title>Mon site</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'contact : contact_list' %}">accueil</a></li> 
+                <li><a href="{% url 'contact:contact_new %'}">creer un contact</a></li>
+
+
+            </ul>
+        </nav>
+        <img src="{% static 'contact/xp.jpg' %}">
+
+    </header>
+</body>
+</html>
